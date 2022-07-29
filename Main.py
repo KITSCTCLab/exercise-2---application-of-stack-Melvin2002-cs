@@ -1,7 +1,7 @@
 class stackADT:
     def __init__(self):
         self.size = 10
-        self.l = [None] * size
+        self.l = [None] *10
         self.top = -1
 
     def isFull(self):
