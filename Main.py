@@ -74,7 +74,6 @@ class stackADT:
 stack = stackADT()
 a=str(input("Enter an Expression : "))
 a=a.split(" ")
-print(a)
 operator=['*','^','/','-','+']
 no_of_digits=0
 no_of_op=0
