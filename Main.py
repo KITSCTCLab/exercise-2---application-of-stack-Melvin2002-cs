@@ -72,7 +72,7 @@ class stackADT:
         self.Push(b)
 
 stack = stackADT()
-a=str(input("Enter an Expression : "))
+a=str(input())
 a=a.split(" ")
 operator=['*','^','/','-','+']
 no_of_digits=0
