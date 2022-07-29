@@ -77,12 +77,11 @@ stack = stackADT()
 a=str(input("Enter an Expression : "))
 a=a.split()
 print(a)
-digits=['0','1','2','3','4','5','6','7','8','9']
 operator=['*','^','/','-','+']
 no_of_digits=0
 no_of_op=0
 for i in a:
-    if i in digits:
+    if i.isdigit():
         no_of_digits+=1
     elif i in operator:
         no_of_op+=1
@@ -93,7 +92,7 @@ if no_of_digits== (no_of_op+1):
 
     for i in a:
         print(i)
-        if i in digits:
+        if i.isdigit()s:
             stack.Push(int(i))
             stack.display()
         elif i == '+':
