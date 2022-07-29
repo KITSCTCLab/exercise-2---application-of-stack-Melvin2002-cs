@@ -42,8 +42,6 @@ class stackADT:
         else:
             print(self.l[self.top])
 
-    def display(self):
-        print(self.l)
 
 
 
@@ -91,22 +89,17 @@ for i in a:
 if no_of_digits== (no_of_op+1):
 
     for i in a:
-        print(i)
         if i.isdigit():
             stack.Push(int(i))
-            stack.display()
         elif i == '+':
             stack.add()
-            stack.display()
         elif i == '-':
             stack.sub()
-            stack.display()
         elif i == '*':
             stack.mul()
-            stack.display()
+
         elif i == '/':
             stack.div()
-            stack.display()
 
 
     print(stack.l[0])
