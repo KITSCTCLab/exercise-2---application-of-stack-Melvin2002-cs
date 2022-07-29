@@ -101,6 +101,6 @@ if no_of_digits== (no_of_op+1):
             stack.div()
 
 
-    print(stack.l[0])
+    print(int(stack.l[0]))
 else:
     print('Invalid postfix expression')
