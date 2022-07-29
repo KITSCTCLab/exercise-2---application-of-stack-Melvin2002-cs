@@ -1,7 +1,7 @@
 class stackADT:
     def __init__(self):
-        self.size = 10
-        self.l = [None] *10
+        self.size = 25
+        self.l = [None] * 25
         self.top = -1
 
     def isFull(self):
@@ -73,7 +73,7 @@ class stackADT:
 
 stack = stackADT()
 a=str(input("Enter an Expression : "))
-a=a.split()
+a=a.split(" ")
 print(a)
 operator=['*','^','/','-','+']
 no_of_digits=0
