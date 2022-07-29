@@ -92,7 +92,7 @@ if no_of_digits== (no_of_op+1):
 
     for i in a:
         print(i)
-        if i.isdigit()s:
+        if i.isdigit():
             stack.Push(int(i))
             stack.display()
         elif i == '+':
