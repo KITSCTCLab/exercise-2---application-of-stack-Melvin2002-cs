@@ -1,6 +1,6 @@
 class stackADT:
-    def __init__(self, size):
-        self.size = size
+    def __init__(self):
+        self.size = 10
         self.l = [None] * size
         self.top = -1
 
@@ -73,8 +73,7 @@ class stackADT:
         b = a2 / a1
         self.Push(b)
 
-stack_size = int(input("Enter the size of the stack: "))
-stack = stackADT(stack_size)
+stack = stackADT()
 a=str(input("Enter an Expression : "))
 a=a.split()
 print(a)
